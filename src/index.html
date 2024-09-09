@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark mode background */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column; /* Stack items vertically */
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .profile-card {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            background-color: #1e1e1e; /* Card background in dark mode */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            max-width: fit-content; /* Adjust width to fit content */
+            padding-right: 40px; /* Add some space to the right */
+        }
+        .profile-card img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .profile-info h1 {
+            font-size: 28px; /* Adjust font size for better readability */
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+        .profile-info p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #b0b0b0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px; /* Gap between the About Me and Links section */
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* About Me Section */
+        .about-card, .links-card {
+            background-color: #1e1e1e; /* Card background in dark mode */
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .about-card h2 {
+            font-size: 20px; /* Smaller font for About Me */
+            margin: 0;
+            color: #ffffff;
+        }
+        .about-card p {
+            font-size: 16px;
+            margin: 10px 0 0;
+            font-style: italic; /* Italic text */
+            color: #b0b0b0;
+        }
+
+        /* Links Section */
+        .links-card h5 {
+            font-size: 16px;
+            margin: 0;
+            color: #d3d3d3; /* Lighter grey for titles */
+        }
+        .links-card a {
+            font-size: 16px;
+            padding: 5px 10px;
+            background-color: #2c2c2c; /* Darker grey for links */
+            border-radius: 8px;
+            color: #d3d3d3; /* Lighter grey text for links */
+            text-decoration: none;
+            margin-bottom: 10px; /* Space between links */
+            display: block; /* Make links appear on separate lines */
+        }
+        .links-card a:hover {
+            background-color: #3c3c3c; /* Slightly lighter grey on hover */
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Profile Card Section -->
+<div class="profile-card">
+    <img alt="profile" loading="lazy" src="myPhoto.jpeg">
+    <div class="profile-info">
+        <h1>Nuray Kavkayeva</h1>
+        <p>Student of SDU</p>
+        <p>infp</p>
+    </div>
+</div>
+
+<div class="container">
+    <!-- About Me Section -->
+    <div class="about-card">
+        <h2>About Me:</h2>
+        <p>Born in Balhash</p>
+        <p>Live in Astana</p>
+        <p>Lived in Semey</p>
+        <p>Study in Kaskelen</p>
+        <p>From Aktobe</p>
+    </div>
+
+    <!-- Links Section -->
+    <div class="links-card">
+        <h5>Telegram:</h5>
+        <a href="https://web.telegram.org/a/#5277388372">Telegram</a>
+        <h5>LinkedIn:</h5>
+        <a href="https://www.linkedin.com/in/nuray-kavkayeva-16345b2b7/">LinkedIn</a>
+    </div>
+</div>
+
+</body>
+</html>
